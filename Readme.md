@@ -1,6 +1,7 @@
 # Data Structures and Algorithms
 
-
+### Arrays
+* [Alternate Sort]()
 
 ### Linked List
 * [Singly Linked List](./singly_linked_list.cpp)
