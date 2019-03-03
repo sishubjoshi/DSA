@@ -14,6 +14,7 @@
 //     }
 //     return -1;
 // }
+
 // int main() {
 //     int arr[10] ={1,2,3,4,5,6,7,8,9};
 //     int n = sizeof(arr)/sizeof(arr[0]);
@@ -65,38 +66,7 @@
 //     }
 
 // }
-// Alternate sort
-// #include <iostream>
-// using namespace std;
 
-// int main() {
-//     int n;
-//     cin>>n;
-//     while(n--) {
-//         int size;
-//         cin>>size;
-//         long long int arr[size];
-//         for(int i=0; i<size; i++) cin>>arr[i];
-//         for(int i=0; i<size-1; i++) {
-//             if(i%2==0) {
-//                 if(arr[i] >= arr[i+1]) {
-//                     int temp = arr[i+1];
-//                     arr[i+1] = arr[i];
-//                     arr[i] = temp;
-//                 }
-//             } else {
-//                 if(arr[i] <= arr[i+1]) {
-//                     int temp = arr[i+1];
-//                     arr[i+1] = arr[i];
-//                     arr[i] = temp;
-//                 }
-//             }
-//         }
-
-//         for(int x:arr) cout<<x<<" ";
-//         cout<<"\n";
-//     }
-// }
 
 // LECANDY
 // #include<bits/stdc++.h>
@@ -141,22 +111,62 @@
 // }
 
 
-#include <iostream>
-using namespace std;
-int main() {
-	int a[] = {1,0,2,0,4,0,0,5,6,7};
-	int j=10-1;
-	for(int i=0; i<j-1; i++) {
-		if(a[i] == 0) {
-			int temp = a[i];
-			a[i] = a[j];
-			a[j] = temp;
-			j--;
-	
-		}
-		// cout<<sizeof(a)/sizeof(a[0]);
-	}
-			for(int x:a)cout<<x<<" ";
 
-	return 0;
-}
+// Rainbowa   1 2 3 4 5 6 7 6 5 4 3 2 1
+// #include <iostream>
+// using namespace std;
+// int main() {
+// 	int n;
+// 	cin>>n;
+// 	while(n--) {
+// 		int size;
+// 		cin>>size;
+// 		int a[size], b[11]={0},i, j=0;
+// 		for(i=0; i<size; i++) {
+// 			cin>>a[i];
+// 			b[a[i]]++;
+// 		}
+// 		// for(int x: b)cout<<x<<" ";
+
+// 		int p=1;
+
+// 		if(b[8]!=0 || b[9]!=0 || b[10]!=0) {
+// 			p=0;
+// 		} else {
+
+// 			// in order and even number of occurances
+// 			for(i=1; i<7; i++) {
+// 			if(b[i] != 0 && b[i]%2==0) {
+// 				continue;
+// 				} else {
+// 					p=0;
+// 					break;
+// 				}
+// 			}
+
+
+// 			while(i < j) {
+// 				if(a[i] != a[j]) {
+// 					p=0;
+// 					break;
+// 				} 
+// 				i++;
+// 				j--;
+// 			}
+// 		}
+
+// 		if(p==1 && b[7] == 1) {
+// 				cout<<"yes\n";
+// 			} else {
+// 				cout<<"no\n";
+// 			}
+		
+		
+
+
+
+	
+// 	}
+
+// 	return 0;
+// }

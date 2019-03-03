@@ -1,7 +1,8 @@
 # Data Structures and Algorithms
 
 ### Arrays
-* [Alternate Sort]()
+* [Alternate Sort](./Arrays/alternateSort.cpp)
+* [Minimum distance between two numbers](./Arrays/minDist.cpp)
 
 ### Linked List
 * [Singly Linked List](./singly_linked_list.cpp)
