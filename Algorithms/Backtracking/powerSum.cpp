@@ -2,42 +2,41 @@
 using namespace std;
 
 vector<int> v;
-int sum=0;
+int sum=0, total=0;
 
-void findPower(int num,int n, int p) {
+ int findPower(int num,int p, int n, int c) {
 
+    // //  if(n == 10)return ;
     sum += pow(n,p);
-
-    if(sum <= num && sum >0) {
-        v.push_back(n);
-        cout<<"sum: "<<sum<<endl;
+    cout<<"sum: "<<sum<<endl;
+    if(num < sum) {
+        return 0;
     }
 
-    if(sum == num) {
-            // for(auto it:v)cout<<"vec: "<<it<<" ";
-        cout<<"woo";
-        v.clear();
+    if(num == sum) {
+        c++;
         sum = 0;
-        return;
+        cout<<c<<endl;
+        return 1;
     }
-    if(sum > num) {
-        v.clear();
-        sum = 0;
-        // return false;
+    else {
+
+    for(int i=n+1; pow(n,p) <= num; i++) {
+        findPower(num, p, n+1, c); 
+        cout<<"ff"<<pow(n,p)<<endl;
     }
+    
+    }
+    return total;
 
-    // cout<<n<<" "<<sum<<endl;
-    findPower(num, n-1, p);
 
-
-    return;
 }
 int main() {
 
-    int n = 100,p=2;
+    int n = 13,p=2;
     int c=0;
-    findPower(n,10,p);
-    for(auto t : v)cout<<t<<" ";
-
+    findPower(n,p,2,c);
+    // for(auto t : v)cout<<t<<" ";
+    cout<<n;
     return 0;
 }
