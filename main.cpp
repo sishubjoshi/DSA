@@ -41,7 +41,6 @@
 // 	return 0;
 // }
 
-
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main() {
@@ -53,7 +52,7 @@
 //         bool houses[101];
 
 //         for(int i=0; i<100; i++)houses[i] = true;
-        
+
 //         int policeHouses, speed, minutes;
 
 //         cin>>policeHouses>>speed>>minutes;
@@ -85,18 +84,17 @@
 
 //             if(houses[i]) count++;
 //             // cout<<i<<" ";
-//         } 
+//         }
 
 //         cout<<count<<"\n";
 //     }
 //     return 0;
 // }
 
-
 // pattern  // 1
-            // 3*2
-            // 4*5*6
-            // 10*9*8*7
+// 3*2
+// 4*5*6
+// 10*9*8*7
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -118,21 +116,18 @@
 //        }
 //        cout<<endl;
 
-
-        
 //     }
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// void search(char* pat, char* txt) 
-// { 
-//     int M = strlen(pat); 
-//     int N = strlen(txt); 
-//     int c = 0,k=0; 
+// void search(char* pat, char* txt)
+// {
+//     int M = strlen(pat);
+//     int N = strlen(txt);
+//     int c = 0,k=0;
 //     for(int i=0; i<=N-M; i++) {
 
 //         bool flag =true;
@@ -140,32 +135,30 @@
 //             if(tolower(txt[i+j]) != tolower(pat[j])) {
 //                 flag = false;
 //                 break;
-//             } 
+//             }
 //         }
 
 //         if(flag)c++;
 //     }
 
 //     cout<<c;
-// } 
-  
-// // Driver Code 
-// int main() 
-// { 
-//     char txt[] = "AABAACAAD"; 
-//     char pat[] = "baac"; 
-//     search(pat, txt); 
-//     return 0; 
-// } 
+// }
 
-                        // Binary Search
+// // Driver Code
+// int main()
+// {
+//     char txt[] = "AABAACAAD";
+//     char pat[] = "baac";
+//     search(pat, txt);
+//     return 0;
+// }
+
+// Binary Search
 
 // #include<bits/stdc++.h>
 // using namespace std;
 
-
 // int recursiveBinarySearch(int a[],int low, int high, int num) {
-
 
 //     if(low <= high) {
 
@@ -204,7 +197,6 @@
 //     return 0;
 // }
 
-
 // STRSUB codechef
 
 // #include<bits/stdc++.h>
@@ -228,7 +220,7 @@
 
 //         for(ll i=1; i<size; i++) {
 //             if(a[i] >= a[i-1]) {
-//                 c[i] += c[i-1];                
+//                 c[i] += c[i-1];
 
 //             }
 //             // if(c>0)v+=c;
@@ -249,7 +241,6 @@
 // using namespace std;
 // typedef long long int ll;
 
-
 // int main() {
 
 //     int n;
@@ -269,21 +260,46 @@
 //         }
 //         cout<<ans<<"\n";
 
-        
-        
 //     }
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int t;
+//     cin >> t;
+//     int store[26] = {0};
+//     string temp;
+//     while (t--)
+//     {
 
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    int n;
-    cin>>n;
-    while(n--) {
-        string s;
-        cin>>s;
-        cout<<s<<endl;
-    }
-}
+//         int n;
+//         cin >> n;
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin >> temp;
+//             int len = temp.length();
+//             for (int j = 0; j < len; j++)
+//             {
+//                 store[temp[j] - 97]++;
+//                 // cout << temp[j] << " " << (temp[j] - 97) << " " << store[temp[j] - 97] << "\n";
+//             }
+//         }
+//         //  c = 2, o = 14, d = 3 , e = 4 , h = 7, f = 5 ,
+//         int arr[6] = {store['c' - 97], store['o' - 97], store['d' - 97], store['e' - 97], store['h' - 97], store['f' - 97]};
+//         if (arr[0] /= 2 && arr[1] + arr[2] + arr[4] + arr[5] >= 4 && arr[3] /= 2)
+//         {
+//             cout << *min_element(arr, arr + 6) << endl;
+//         }
+
+//         // for (auto x : arr)
+//         //     cout << x << endl;
+//     }
+
+//     // for (char i = 'a'; i <= 'z'; i++)
+//     //     cout << i << " : " << i - 97 << " ; ";
+
+//     return 0;
+// }
