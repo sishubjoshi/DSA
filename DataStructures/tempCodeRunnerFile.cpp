@@ -1,2 +1,0 @@
-    // delete p;
-    // delete temp;
