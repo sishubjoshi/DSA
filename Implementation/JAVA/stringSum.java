@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class longSum {
+class stringSum {
 
     public void addString(String small, String big, int diff) {
         for (int i = 0; i < diff; i++) {
