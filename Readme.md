@@ -19,7 +19,7 @@
 - [Binary Search Tree]()
 
 ### Graphs
-
+### Bit Manipulation
 ### Algorithms
 
 ### Implementation
