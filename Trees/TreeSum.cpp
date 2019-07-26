@@ -12,7 +12,8 @@ struct TreeNode {
 };
 
 TreeNode* insertNode() {}
-int main() {
+int main() 
+{
 
 TreeNode *root = NULL;
 
