@@ -1,4 +1,4 @@
-// It is one of the most efficient algorithms to generate random numbers.
+// It is one of the most efficient algorithms to generate prime numbers.
 
 
 #include <bits/stdc++.h>
