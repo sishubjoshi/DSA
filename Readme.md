@@ -43,3 +43,10 @@
 - [Linear Search](./Lectures/linearSearch.cpp)
 - [Sum of Array](./Lectures/sumArrayRecursion.cpp)
 - [Reverse an Array](./Lectures/revaArray.cpp)
+
+
+### LeetCode
+- [Sum Of Even Numbers After Queries :zap:](./Programming/leetcode/985.cpp)
+- [Transpose A Matrix](./Programming/leetcode/867.cpp)
+- [Reshape A Matrix](./Programming/leetcode/566.cpp)
+- [Merge Sorted Arrays](./Programming/leetcode/88.cpp)
