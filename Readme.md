@@ -24,7 +24,7 @@
 
 ### Implementation
 
-- [String Sum (java)](.Implementation/JAVA/stringSum.java)
+- [String Sum (java)](./Implementation/JAVA/stringSum.java)
 
 ## Problems given to solve in the Lectures
 
