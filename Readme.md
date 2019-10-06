@@ -7,8 +7,8 @@
 
 ### Linked List
 
-- [Singly Linked List](./singly_linked_list.cpp)
-- [Doubly Linked List](./singly_linked_list.cpp)
+- [Singly Linked List](./DataStructures/LinkedList/sll.cpp)
+- [Doubly Linked List](./DataStructures/LinkedList/doubly_linked_list.cpp)
 
 ### Stack
 
@@ -24,7 +24,7 @@
 
 ### Implementation
 
-- [String Sum (java)]()
+- [String Sum (java)](./Implementation/JAVA/stringSum.java)
 
 ## Problems given to solve in the Lectures
 
